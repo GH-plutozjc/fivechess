@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@android:color/white">
+
+	<com.fs.game.gobang.main.Chessboard android:id="@+id/snake" android:layout_width="match_parent"
+		android:layout_height="match_parent" tileSize="24"
+		android:background="@drawable/face"
+		/>
+	
+<!-- 	<Button  -->
+<!-- 	    android:id="@+id/btn_start" -->
+<!-- 	    android:layout_width="match_parent" -->
+<!-- 	    android:layout_height="wrap_content" -->
+<!-- 	    android:text="开始游戏" -->
+<!-- 	    android:layout_gravity="center" -->
+<!-- 	    /> -->
+	<Button 
+	    android:id="@+id/btn_restart"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:text="@string/go_on"
+	    android:layout_gravity="bottom"
+	    android:layout_marginBottom="50dp"
+	    android:visibility="gone"
+	    />
+	
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		>
+		<TextView
+			android:id="@+id/text"
+			android:text="@string/mode_ready"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerHorizontal="true"
+			android:layout_centerVertical="true"
+			android:textColor="#ff0000"
+			android:textSize="24sp"
+			android:visibility="gone"
+			/>
+		
+	</RelativeLayout>
+
+</FrameLayout>
